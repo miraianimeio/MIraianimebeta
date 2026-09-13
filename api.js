@@ -83,13 +83,13 @@ function executePlayerUrlRefresh() {
   const finalEpisode = currentEpisode ? currentEpisode : "1";
 
   if (activeServerSelectionCode === 1) {
-    videoIframe.src = `https://megaplay.buzz/stream/ani/${finalAnimeId}/${finalEpisode}/sub?autostart=true`;
+    videoIframe.src = `https://zokoanime.video/stream/ani/${finalAnimeId}/${finalEpisode}/sub?autostart=true`;
   } else if (activeServerSelectionCode === 2) {
-    videoIframe.src = `https://megaplay.buzz/stream/ani/${finalAnimeId}/${finalEpisode}/dub?autoplay=1&muted=0`;
+    videoIframe.src = `https://zokoanime.video/stream/ani/${finalAnimeId}/${finalEpisode}/dub?autoplay=1&muted=0`;
   } else if (activeServerSelectionCode === 3) {
-    videoIframe.src = `https://vidnest.fun/animepahe/${finalAnimeId}/${finalEpisode}/sub?autostart=true`;
+    videoIframe.src = `https://megaplay.buzz/stream/ani/${finalAnimeId}/${finalEpisode}/sub?autostart=true`;
   } else if (activeServerSelectionCode === 4) {
-    videoIframe.src = `https://vidnest.fun/animepahe/${finalAnimeId}/${finalEpisode}/dub?autostart=true`;
+    videoIframe.src = `https://megaplay.buzz/stream/ani/${finalAnimeId}/${finalEpisode}/dub?autostart=true`;
   } else if (activeServerSelectionCode === 5) {
     videoIframe.src = `https://vidnest.fun/anime/${finalAnimeId}/${finalEpisode}/sub?autostart=true`;
   } else if (activeServerSelectionCode === 6) {
@@ -102,13 +102,13 @@ async function checkServerAvailability(serverCode, episodeNum) {
   let url;
 
   if (serverCode === 1) {
-    url = `https://megaplay.buzz/stream/ani/${finalAnimeId}/${episodeNum}/sub`;
+    url = `https://zokoanime.video/stream/ani/${finalAnimeId}/${episodeNum}/sub`;
   } else if (serverCode === 2) {
-    url = `https://megaplay.buzz/stream/ani/${finalAnimeId}/${episodeNum}/dub`;
+    url = `https://zokoanime.video/stream/ani/${finalAnimeId}/${episodeNum}/dub`;
   } else if (serverCode === 3) {
-    url = `https://vidnest.fun/animepahe/${finalAnimeId}/${episodeNum}/sub`;
+    url = `https://megaplay.buzz/stream/ani/${finalAnimeId}/${episodeNum}/sub`;
   } else if (serverCode === 4) {
-    url = `https://vidnest.fun/animepahe/${finalAnimeId}/${episodeNum}/dub`;
+    url = `https://megaplay.buzz/stream/ani/${finalAnimeId}/${episodeNum}/dub`;
   } else if (serverCode === 5) {
     url = `https://vidnest.fun/anime/${finalAnimeId}/${episodeNum}/sub`;
   } else if (serverCode === 6) {
